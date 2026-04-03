@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bhawanjot Kaur — Portfolio</title>
+  <meta name="description" content="Bhawanjot Kaur — Developer, Network Engineer & ML Builder. Portfolio of projects, experience and skills."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+
+<!-- NAV -->
+<nav id="nav">
+  <div id="nav-contact" style="font-size:0.72rem;letter-spacing:0.08em;color:rgba(255,255,255,0.55);cursor:pointer;" onclick="scrollToSection('contact')">Contact</div>
+  <div id="nav-logo">BK</div>
+  <button id="nav-menu-btn" onclick="openMenu()">
+    <div class="lines"><span></span><span></span></div>
+    MENU
+  </button>
+</nav>
+
+<!-- MENU OVERLAY -->
+<div id="menu-overlay">
+  <div id="menu-left" onclick="closeMenu()"></div>
+  <div id="menu-right">
+    <button id="menu-close" onclick="closeMenu()">✕</button>
+    <ul id="menu-links">
+      <li><a href="#about" onclick="closeMenu()">About</a></li>
+      <li><a href="#projects" onclick="closeMenu()">Projects</a></li>
+      <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+      <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+      <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+    </ul>
+    <div id="menu-meta">
+      <div><a href="https://linkedin.com/in/bhawanjot-kaur" target="_blank">LinkedIn</a> &nbsp;·&nbsp; <a href="https://github.com/BhawanHere" target="_blank">GitHub</a></div>
+
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <canvas id="star-canvas" style="position:absolute;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
+  <img id="hero-img" src="assets/portrait.jpg" alt="Bhawanjot Kaur"/>
+  <div id="hero-text">
+    <h1 class="hero-name">Bhawanjot <span>Kaur</span></h1>
+    <p class="hero-role">Developer &nbsp;·&nbsp; Network Engineer &nbsp;·&nbsp; ML Builder</p>
+    <div class="hero-btns">
+      <button class="btn btn-white" onclick="scrollToSection('projects')">View Projects</button>
+      <button class="btn btn-ghost" onclick="scrollToSection('contact')">Say Hello</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- MOSAIC GRID -->
+<div id="mosaic">
+
+  <div class="mosaic-cell" id="mc-about" onclick="scrollToSection('about')">
+    <div class="mosaic-content">
+      <div class="mosaic-cat">About Me</div>
+      <h3 class="mosaic-title">Developer,<br>Network Engineer<br>& ML Builder</h3>
+      <span class="mosaic-link">Learn more <span class="mosaic-arrow">↗</span></span>
+    </div>
+  </div>
+
+  <div class="mosaic-cell" id="mc-skills" onclick="scrollToSection('skills')">
+    <div class="mosaic-content">
+      <div class="mosaic-cat">Toolkit</div>
+      <h3 class="mosaic-title">22 Technologies<br>Across Stack,<br>Network & AI</h3>
+      <span class="mosaic-link">Explore skills <span class="mosaic-arrow">↗</span></span>
+    </div>
+  </div>
+
+  <div class="mosaic-cell mosaic-cell-tall" id="mc-projects" onclick="scrollToSection('projects')">
+    <div class="mosaic-content">
+      <div class="mosaic-cat">Portfolio</div>
+      <h3 class="mosaic-title">9 Projects —<br>AI, Networking,<br>Full-Stack<br>& Machine Learning</h3>
+      <span class="mosaic-link">View projects <span class="mosaic-arrow">↗</span></span>
+    </div>
+  </div>
+
+  <div class="mosaic-cell" id="mc-experience" onclick="scrollToSection('experience')">
+    <div class="mosaic-content">
+      <div class="mosaic-cat">Experience</div>
+      <h3 class="mosaic-title">Teaching Assistant,<br>Teck Co-op,<br>Walmart Leadership</h3>
+      <span class="mosaic-link">See experience <span class="mosaic-arrow">↗</span></span>
+    </div>
+  </div>
+
+  <div class="mosaic-cell" id="mc-contact" onclick="scrollToSection('contact')">
+    <div class="mosaic-content">
+      <div class="mosaic-cat">Contact</div>
+      <h3 class="mosaic-title">Open to Roles,<br>Co-ops &<br>Projects</h3>
+      <span class="mosaic-link">Get in touch <span class="mosaic-arrow">↗</span></span>
+    </div>
+  </div>
+
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div style="max-width:1200px;margin:0 auto;padding:100px 80px;">
+    <div class="section-label">About</div>
+    <div class="about-grid">
+      <div>
+        <h2 class="about-headline">Developer,<br>Network Engineer,<br><em>ML Builder.</em></h2>
+
+      </div>
+      <div class="reveal">
+        <p class="about-body">I'm Bhawanjot Kaur, someone driven by curiosity, creativity, and a genuine passion for building meaningful things. I enjoy bringing together logic, design, and technology to create work that is not only functional, but also intuitive, thoughtful, and impactful.</p>
+        <p class="about-body" style="margin-top:16px;">I'm naturally drawn to challenges that push me to think deeper, improve continuously, and turn ideas into something real. For me, growth comes from creating, experimenting, refining, and learning through every step of the process — both personally and professionally.</p>
+        <div class="about-links">
+          <a class="about-link" href="https://linkedin.com/in/bhawanjot-kaur" target="_blank"><span>LinkedIn ↗</span></a>
+          <a class="about-link" href="https://github.com/BhawanHere" target="_blank"><span>GitHub ↗</span></a>
+          <a class="about-link" onclick="scrollToSection('contact')"><span>Get in Touch</span><span>→</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="projects-header reveal">
+    <div>
+      <div class="projects-count">Portfolio</div>
+      <h2 class="projects-title">Selected Projects</h2>
+    </div>
+    <div style="font-size:0.78rem;color:rgba(255,255,255,0.35);">Full-stack · Security · AI · Networking</div>
+  </div>
+  <div id="proj-stage"></div>
+  <div class="carousel-nav">
+    <button class="c-btn" id="c-prev">←</button>
+    <div class="c-dots" id="c-dots"></div>
+    <button class="c-btn" id="c-next">→</button>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" style="border-top:1px solid rgba(255,255,255,0.08);">
+  <div style="max-width:1200px;margin:0 auto;padding:80px 80px;">
+    <div class="section-label reveal">Experience</div>
+    <div class="exp-grid">
+      <div class="exp-sidebar reveal">
+        <h2 class="exp-sidebar-title">Work,<br>Co-op &<br><em style="font-style:italic;opacity:0.7;">Community.</em></h2>
+        <p class="exp-sidebar-body">Roles that shaped how I think about technology, teams, and real-world problems.</p>
+      </div>
+      <div class="exp-list" id="exp-list"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="skills-inner">
+    <div class="skills-top">
+      <div class="reveal">
+        <div class="section-label">Toolkit</div>
+        <h2 class="skills-headline">Technologies<br>I Work With</h2>
+      </div>
+      <div style="color:rgba(255,255,255,0.5);font-size:0.9rem;line-height:1.75;padding-top:52px;" class="reveal">
+        From backend APIs to network automation, ML pipelines to mobile apps — I pick the right tool for the problem.
+      </div>
+    </div>
+    <div class="skills-groups reveal" id="skills-groups"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-grid">
+      <div class="reveal">
+        <h2 class="contact-headline">Let's build<br><em>something</em><br>together.</h2>
+        <p class="contact-tagline">Open to full-time roles, co-ops, freelance projects, or just a conversation about technology.</p>
+        <div class="contact-info">
+          </div>
+      </div>
+      <form class="contact-form reveal" id="contact-form" onsubmit="handleForm(event)">
+        <input type="text" name="name" placeholder="Your name" required/>
+        <input type="email" name="email" placeholder="Your email" required/>
+        <input type="text" name="subject" placeholder="Subject"/>
+        <textarea name="message" placeholder="Your message"></textarea>
+        <button type="submit">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2026 Bhawanjot Kaur</span>
+  <div class="footer-links">
+    <a href="https://linkedin.com/in/bhawanjot-kaur" target="_blank">LinkedIn</a>
+    <a href="https://github.com/BhawanHere" target="_blank">GitHub</a>
+    <a onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</a>
+  </div>
+</footer>
+<!-- <button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button> -->
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
